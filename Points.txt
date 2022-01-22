@@ -1,0 +1,40 @@
+Install Packages
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.AspNetCore.Identity
+Microsoft.AspNetCore.Identity.EntityFrameworkcore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+
+Add Connectionstring in appsettings.json file
+"ConnectionStrings": {
+    "ConnectionStr": "Data Source=MOHAN\\MYDBEXPRESS; Initial Catalog=JWTRefreshToken;Integrated Security=True"
+  }
+
+Add Jwt ValidAudience, Secret and issuer
+"JWT": {
+    "ValidAudience": "User",
+    "ValidIssuer": "http://localhost:58186",
+    "Secret": "ThisMySecretKey123"
+  }
+
+
+  Post Request Model
+  {
+  "userName": "Mohan",
+  "email": "programmer.mohan89@gmail.com",
+  "password": "Welcome@1234"
+}
+
+
+{
+  "userName": "Sonia",
+  "email": "Sonia@gmail.com",
+  "password": "Sonia@123"
+}
+
+{
+  "userName": "MohanChands",
+  "email": "Mohan@gmail.com",
+  "password": "Mohan@1234"
+}
